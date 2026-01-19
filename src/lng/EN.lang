@@ -11,7 +11,7 @@
 
 //General strings
 "about"				"About"
-"about_info"			"Jimm Renaissance Is Mobile Messenger, fork for KICQ, Renaissance (mrim.su) support.\n\nBuild: ###VERSION### from ###DATE###.\nModules: ###MODULES###\n\nPostscriptum: Hostname format should be IP:PORT or DOMAIN:IP\n\nProject site: http://m.jimm.net.ru/"
+"about_info"			"Jimm Renaissance Is Mobile Messenger, fork for KICQ, Renaissance (mrim.su) support.\n\nAuthors: Vladimir Barinov\nSpecial thanks to: MBV.DESIGN, Renaissance Team\n\nBuild: ###VERSION### from ###DATE###.\nModules: ###MODULES###\n\nPostscriptum: Hostname format should be IP:PORT or DOMAIN:IP\n\nProject site: http://m.jimm.net.ru/"
 "absence"			"Absence"
 "add_from_fs"                   "Add from FS"
 "add_new"			"New"

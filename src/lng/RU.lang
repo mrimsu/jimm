@@ -190,7 +190,7 @@
 "saturday"                                        "Суббота"
 "sunday"                                        "Воскресенье"
 "about"                                                "О программе"
-"about_info"                                "Jimm Renaissance - Мобильный IM-клиент, форк для поддержки KICQ, Renaissance (mrim.su).\n\nВерсия ###VERSION### от ###DATE###.\nМодули: ###MODULES###\n\nПостскриптум: Формат хоста в настройках профиля должен быть АЙПИ:ПОРТ или ДОМЕН:ПОРТ"
+"about_info"                                "Jimm Renaissance - Мобильный IM-клиент, форк для поддержки KICQ, Renaissance (mrim.su).\n\nАвторы: Владимир Баринов\nСпасибо: MBV.DESIGN, Renaissance Team\n\nВерсия ###VERSION### от ###DATE###.\nМодули: ###MODULES###\n\nПостскриптум: Формат хоста в настройках профиля должен быть АЙПИ:ПОРТ или ДОМЕН:ПОРТ"
 "absence"                                        "Отсутствие"
 "add_from_fs"                                   "Загрузить файл"
 "add_new"                                        "Новый"

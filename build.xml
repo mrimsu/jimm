@@ -190,10 +190,10 @@ Author(s): Manuel Linsmayer, Andreas Rossbacher
     <!--  Internal target: preprocess-manifest   -->
     <target name="preprocess-manifest" depends="init">
         <copy file="${res}/MANIFEST.MF" todir="${build}" />
-        <condition property="manifest/touch" value="MIDlet-Touch-Support: true${line.separator}" else="">
+        <!-- <condition property="manifest/touch" value="MIDlet-Touch-Support: true${line.separator}" else="">
     	    <contains string="${modules}" substring="TOUCH"/>
         </condition>
-        <echo file="${build}/MANIFEST.MF" append="true">${manifest/touch}</echo>
+        <echo file="${build}/MANIFEST.MF" append="true">${manifest/touch}</echo> -->
         <replace file="${build}/MANIFEST.MF" encoding="UTF-8">
             <replacefilter token="###VERSION###" value="${version/jimm}" />
             <replacefilter token="###MIDLET-NAME###" value="${midlet/name}" />
