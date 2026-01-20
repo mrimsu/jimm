@@ -173,7 +173,7 @@ public final class MrimConnection extends ClientConnection {
         setProgress(60);
 
         MrimPacket loginResult = getPacket();
-        if (MrimPacket.MRIM_CS_LOGIN_ACK != loginResult.getCommand()) {
+        if (MrimPacket.MRIM_CS_LOGIN_REJ == loginResult.getCommand()) {
             // #sijapp cond.if modules_DEBUGLOG is "true" #
             DebugLog.println("mrim login resone " + loginResult.getData().getString());
             // #sijapp cond.end#
