@@ -487,6 +487,7 @@
 "error_113"			"Too many clients from same IP"
 "error_114"			"Rate exceeded"
 "error_118"			"No response from server"
+"error_119"         "Internal server error"
 
 //Network communication specific exceptions
 //Connection to server

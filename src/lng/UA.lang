@@ -490,6 +490,7 @@
 "error_116"			"Оффлайн повiдомлення не може бути оброблено"
 "error_117"			"Немає UIN та/або паролю"
 "error_118"			"Сервер не вiдповiдає"
+"error_119"         "Внутрішня помилка серверу"
 
 //Network communication specific exceptions
 //Connection to server

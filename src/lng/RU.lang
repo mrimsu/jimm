@@ -536,6 +536,7 @@
 "error_114"                                        "Попытки исчерпаны"
 "error_116"                                        "Оффлайн сообщение не может быть обработано"
 "error_118"                                        "Сервер не отвечает"
+"error_119"                                        "Внутренняя ошибка сервера"
 
  // Network communication specific exceptions (first half main connection second half peer)
 "error_120"                                        "Произошла ошибка ввода-вывода"

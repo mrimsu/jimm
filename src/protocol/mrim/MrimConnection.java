@@ -174,11 +174,18 @@ public final class MrimConnection extends ClientConnection {
 
         MrimPacket loginResult = getPacket();
         if (MrimPacket.MRIM_CS_LOGIN_REJ == loginResult.getCommand()) {
+            String errorReason = loginResult.getData().getString();
             // #sijapp cond.if modules_DEBUGLOG is "true" #
-            DebugLog.println("mrim login resone " + loginResult.getData().getString());
+            DebugLog.println("mrim login deny reason " + errorReason);
             // #sijapp cond.end#
-            mrim.setPassword(null);
-            throw new JimmException(111, 0);
+            if ("Invalid Login".equals(errorReason)) {
+                mrim.setPassword(null);
+                throw new JimmException(111, 0);
+            } else if ("Database error".equals(errorReason)) {
+                throw new JimmException(119, 0);
+            } else {
+                throw new JimmException(100, 0);
+            }
         }
         setProgress(80);
 
@@ -771,7 +778,7 @@ public final class MrimConnection extends ClientConnection {
             String xstatus = packetData.getString();
             String title   = packetData.getUcs2String();
             String desc    = packetData.getUcs2String();
-            long unkVal    = packetData.getDWord();
+            long featFlags = packetData.getDWord();
             String client  = packetData.getString();
 
 
